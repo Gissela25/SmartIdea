@@ -1,0 +1,24 @@
+.nav-link-yellow {
+    color: #FED600;
+}
+
+.nav-link-yellow:hover {
+    color: #F4F4F2;
+}
+
+.nav-link-white {
+    color: #fff;
+}
+
+.nav-link-white:hover {
+    color: #F4F4F2;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #2C3333;
+}
+
+#nosotros {
+    background-color: black;
+}
