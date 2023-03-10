@@ -14,11 +14,49 @@
     color: #F4F4F2;
 }
 
+.nav-link-black {
+    color: white;
+}
+.nav-link-black:hover {
+    color: #FED600;
+}
+
+
 body {
     font-family: 'Roboto Mono', monospace;
     background-color: #2C3333;
 }
 
+.icono-grande {
+    font-size: 4em;
+}
+
 #nosotros {
     background-color: black;
 }
+.card-body {
+    display: flex; /* establece el contenedor "card-body" como un contenedor flex */
+    justify-content: center; /* centra el contenido horizontalmente */
+    align-items: center; /* centra el contenido verticalmente */
+    flex-direction: column
+ }
+ .circle {
+    width: 100px; /* ajusta el tamaño del círculo según sea necesario */
+    height: 100px;
+    display: flex; /* establece el elemento "circle" como un contenedor flex */
+    justify-content: center; /* centra el contenido horizontalmente */
+    align-items: center; /* centra el contenido verticalmente */
+    border-radius: 50%; /* convierte el elemento en un círculo */
+    background-color: #FED600; /* establece el color de fondo */
+  }
+
+  .nav-item.active .nav-link {
+    color: black;
+    background-color: #FED600;
+  }
+  .card-title{
+    color: #FED600;
+  }
+  .card-text{
+    color: white;
+  }

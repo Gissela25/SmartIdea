@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #2C3333;">
+    <nav class="navbar navbar-expand-lg" style="background-color: #2c3333">
         <div class="container-fluid">
             <a class="navbar-brand nav-link-yellow" href="index.html">Smart Idea</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -34,6 +34,81 @@
             </div>
         </div>
     </nav>
+
+    <div class="card text-center mx-3 my-4 bg-dark">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-black" aria-current="true" href="#"
+                        onclick="changeContent('content1'); setActiveNav(this)">Aurus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-black" aria-current="true" href="#"
+                        onclick="changeContent('content2'); setActiveNav(this)">Jony</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-black" aria-current="true" href="#"
+                        onclick="changeContent('content3'); setActiveNav(this)">William</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-black" aria-current="true" href="#"
+                        onclick="changeContent('content4'); setActiveNav(this)">Gissela</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-black" aria-current="true" href="#"
+                        onclick="changeContent('content5'); setActiveNav(this)">Susan</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card-body" id="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">
+                With supporting text below as a natural lead-in to additional content.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function setActiveNav(navLink) {
+            // remove "active" class from all nav items
+            var navItems = document.getElementsByClassName("nav-item");
+            for (var i = 0; i < navItems.length; i++) {
+                navItems[i].classList.remove("active");
+            }
+            // add "active" class to clicked nav item
+            navLink.parentNode.classList.add("active");
+        }
+
+        function changeContent(content) {
+            var cardBody = document.getElementById("card-body");
+            switch (content) {
+                case "content1":
+                    cardBody.innerHTML =
+                        "<h5 class='card-title'>Content 1 Title</h5><p class='card-text'>This is the first content.</p>";
+                    break;
+                case "content2":
+                    cardBody.innerHTML =
+                        "<h5 class='card-title'>Content 2 Title</h5><p class='card-text'>This is the second content.</p>";
+                    break;
+                case "content3":
+                    cardBody.innerHTML =
+                        "<h5 class='card-title'>Content 3 Title</h5><p class='card-text'>This is the second content.</p>";
+                    break;
+                case "content4":
+                    cardBody.innerHTML =
+                        "<h5 class='card-title'>Content 4 Title</h5><p class='card-text'>This is the second content.</p>";
+                    break;
+                case "content5":
+                    cardBody.innerHTML =
+                        "<h5 class='card-title'>Content 5 Title</h5><p class='card-text'>This is the second content.</p>";
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
