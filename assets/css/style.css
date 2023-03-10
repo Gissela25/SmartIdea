@@ -14,15 +14,23 @@
     color: #F4F4F2;
 }
 
+.nav-link-black {
+    color: white;
+}
+.nav-link-black:hover {
+    color: #FED600;
+}
+
+
 body {
     font-family: 'Roboto Mono', monospace;
     background-color: #2C3333;
 }
 
+.icono-grande {
+    font-size: 4em;
+}
+
 #nosotros {
     background-color: black;
-}
-.seccionContactanos{
-    background-color: black;
-    color: #F4F4F2;
 }
