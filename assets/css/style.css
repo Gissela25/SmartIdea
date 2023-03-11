@@ -60,6 +60,17 @@ body {
   }
   .card-text{
     color: white;
+    text-align: justify;
   }
   .ntrabajo{
   }
+.divImagen{
+    width: 85%;
+    border-radius: 50%
+}
+ul{
+    list-style-type:square;
+}
+.titlePortafolio{
+    color: #FED600;
+}
