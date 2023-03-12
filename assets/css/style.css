@@ -92,3 +92,7 @@ ul b{
     padding: 0 10%;
     margin-bottom: 2rem;
 }
+.card-height {
+    height: 600px; /* Establece la altura deseada para los cards */
+  }
+  
