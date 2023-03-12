@@ -30,6 +30,9 @@ body {
 .icono-grande {
     font-size: 4em;
 }
+.icono-peque {
+    font-size: 2em;
+}
 
 #nosotros {
     background-color: black;
@@ -75,4 +78,17 @@ ul b{
 .githubAccount:link, .githubAccount:visited, .githubAccount:active {
     text-decoration:none;
     color: #F4F4F2;
+}
+.servicios {
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+ .carousel-item img {
+    width: 80%;
+    margin: auto;
+}
+
+.carousel {
+    padding: 0 10%;
+    margin-bottom: 2rem;
 }
