@@ -83,7 +83,7 @@ ul b{
     margin-top: 20px;
     margin-bottom: 20px;
  }
- .carousel-item img {
+ /* .carousel-item img {
     width: 80%;
     margin: auto;
 }
@@ -91,9 +91,9 @@ ul b{
 .carousel {
     padding: 0 10%;
     margin-bottom: 2rem;
-}
+} */
 .card-height {
-    height: 700px; /* Establece la altura deseada para los cards */
+    height: 700px; 
   }
   
   .margen-superior {
@@ -109,3 +109,9 @@ ul b{
     margin: 0 10px;
   }
    */
+.margin{
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 5%;
+}
