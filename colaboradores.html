@@ -11,6 +11,7 @@
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
             crossorigin="anonymous"
         >
+        <link rel="icon" href="/assets//img/icon.png">
         <title>Colaboradores - Smart Idea</title>
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +31,10 @@
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon my-toggler" >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+                            <path stroke="#FED600" style="height: 3px;" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/>
+                        </svg></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
@@ -89,11 +93,12 @@
                 </ul>
             </div>
             <div class="card-body" id="card-body">
-                <h5 class="card-title">Special title treatment</h5>
+                <h3 class="card-title">Smart Idea</h3>
                 <p class="card-text py-4">
-                    With supporting text below as a natural lead-in to additional content.
+                    Ven y conoce un poco más sobre nuestro equipo de desarrollo, sus capacidades y proyectos realizados
                 </p>
             </div>
+            <a href="http://" target="_blank" rel="noopener noreferrer"></a>
         </div>
         <script>
         function setActiveNav(navLink) {
@@ -111,7 +116,37 @@
             switch (content) {
                 case "content1":
                     cardBody.innerHTML =
-                        "<h5 class='card-title'>Content 1 Title</h5><p class='card-text'>This is the first content.</p>";
+                        "<div class='row px-5'>"+  
+                        "<h2 class='card-title'>Aurus Alfaro</h2>"+             
+                        "<div class='col-md-9 card-text'>"+                   
+                        "<p class=' card-text py-4'>Soy Aurus Alfaro de 32 años de edad originario de la ciudad de San Vicente, actualmente estudiante de ingeniería en ciencias de la computación en Universidad Don Bosco, "+
+                        "mi experiencia profesional consiste principalmente en el desarrollo de aplicaciones financieras en ASP.net C# en intranet y tecnologías lado cliente.</p>"+
+                        "<p class=' card-text py-1'>Me interesa todos los aspectos de la tecnología de la información, principalmente el desarrollo full stack, tengo experiencia administrando en servicios cloud como "+
+                        "Azure en áreas de VPS, bases de datos, DNS y certificados SSL así como blob storages, entre otros.</p>"+
+                        "<p class='card-text titlePortafolio'><b>Portafolio de proyectos:</b></p>"+
+                        "<div class='row card-text'>"+
+                        "<div class='col-md-6'>"+
+                        "<ul class='card-text'>"+
+                        "<li><b>Sistema para administración de pasantías</b><br> Desarrollado utilizando  ASP.net MVC 5</li><br>"+
+                        "<li><b>Sistema para reserva de habitaciones en hotel</b><br> Desarrollado utilizando  Java y JSP</li><br>"+
+                        "</ul>"+
+                        "</div>"+
+                        "<div class='col-md-6'>"+
+                        "<ul class='card-text'>"+
+                        "<li><b>Aplicación web para videojuego (mmorpg ffxiv)</b><br> Desarrollado utilizando  ASP.net MVC 5</li><br>"+
+                        "<li><b>Sistema manejo de cartera de clientes para cooperativas</b><br> Desarrollado utilizando  ASP.Net MVC 5, Jquery y Bootstrap</li><br>"+
+                        "</ul>"+
+                        "</div>"+
+                        "</div>"+
+                        "</div>"+
+                        "<div class='col-md-3'>"+
+                        "<img src='https://smartidea-api.000webhostapp.com/images/aurus-dev.jpg' alt='developer-aurus' class='img-fluid start-float divImagen py-4 my-4'>"+
+                        "</div>"+
+                        "<div class='py-2'>"+
+                        "<p class='card-text'><b class='card-title'>Cargo en el equipo:</b> Tester </p>"+
+                        "<p class='card-text'><b class='card-title'>Cuenta de Github: </b><a href='https://github.com/horusxci' class='githubAccount' target='_blank'>Horusxci</a></p>"
+                        +"</div>"+
+                        "</div>";
                 break;
                 case "content2":
                     cardBody.innerHTML =
@@ -127,38 +162,139 @@
                         "<div class='row card-text'>"+
                         "<div class='col-md-6'>"+
                         "<ul class='card-text'>"+
-                        "<li><b>Sistema de Control de Inscripciones de Aeróbicos.</b><br> Desarrollado utilizando  Windows Forms, C# y SQL Server</li><br>"+
-                        "<li><b>Calculadora Física: Cinemática y Dinámica de Partículas.</b><br> Desarrollado utilizando  Windows Forms,Vectores y C#</li><br>"+
-                        "<li><b>Gestor de asistencias con Escáner.</b><br> Desarrollado utilizando  Windows Forms, C# y SQL Server)</li><br>"+
-                        "<li><b>HelpDesk.</b><br> Desarrollado utilizando JavaScript, HTML y CSS</li><br>"+
+                        "<li><b>Sistema de Control de Inscripciones de Aeróbicos</b><br> Desarrollado utilizando  Windows Forms, C# y SQL Server</li><br>"+
+                        "<li><b>Calculadora Física: Cinemática y Dinámica de Partículas</b><br> Desarrollado utilizando  Windows Forms,Vectores y C#</li><br>"+
+                        "<li><b>Gestor de asistencias con Escáner</b><br> Desarrollado utilizando  Windows Forms, C# y SQL Server</li><br>"+
+                        "<li><b>HelpDesk</b><br> Desarrollado utilizando JavaScript, HTML y CSS</li><br>"+
                         "</ul>"+
                         "</div>"+
                         "<div class='col-md-6'>"+
                         "<ul class='card-text'>"+
-                        "<li><b>Analizador Léxico y Sintáctico.</b><br> Desarrollado utilizando  Forms y Java</li><br>"+
-                        "<li><b>Ecommerce de una Farmacia.</b><br> Desarrollado utilizando  C# y ASP.net EF MVC 5</li><br>"+
-                        "<li><b>Ecommerce de una Ferretería.</b><br> Desarrollado utilizando PHP y MySQL</li><br>"+
-                        "<li><b>Progress-mind</b><br> Desarrollado utilizando  React Native y Firebase</li><br>"+
+                        "<li><b>Analizador Léxico y Sintáctico</b><br> Desarrollado utilizando  Forms, Jflex, y Java</li><br>"+
+                        "<li><b>mioPharma (Ecommerce)</b><br> Desarrollado utilizando  C#, Bootstrap y ASP.net Core MVC 5</li><br>"+
+                        "<li><b>Sumersa (Ecommerce)</b><br> Desarrollado utilizando PHP, Bootstrap y MySQL</li><br>"+
+                        "<li><b>Progress-mind: Aplicación de aprendizaje</b><br> Desarrollado utilizando  React Native, Node JS y Firebase</li><br>"+
                         "</ul>"+
                         "</div>"+
                         "</div>"+
                         "</div>"+
                         "<div class='col-md-3'>"+
-                        "<img src='/assets/img/devs/jony-dev.jpg' alt='developer' class='img-fluid start-float divImagen py-4 my-4'>"+
+                        "<img src='https://smartidea-api.000webhostapp.com/images/jony-dev.jpg' alt='developer-jony' class='img-fluid start-float divImagen py-4 my-4'>"+
                         "</div>"+
+                        "<div class='py-4'>"+
+                        "<p class='card-text'><b class='card-title'>Cargo en el equipo:</b> Desarrollador</p>"+
+                        "<p class='card-text'><b class='card-title'>Cuenta de Github: </b><a href='https://github.com/Jony-07' class='githubAccount' target='_blank'>Jony-07</a></p>"
+                        +"</div>"+
                         "</div>";
                         break;
                 case "content3":
                     cardBody.innerHTML =
-                        "<h5 class='card-title'>Content 3 Title</h5><p class='card-text'>This is the second content.</p>";
+                        "<div class='row px-5'>"+  
+                        "<h2 class='card-title'>William Portan</h2>"+             
+                        "<div class='col-md-9 card-text'>"+                   
+                        "<p class=' card-text py-4'>Mi nombre es William Fernando  Portan tengo 25 años, soy el mayor de dos hermanos, nacido en San Salvador, del municipio de Ilopango, "+
+                        "soy bilingüe en el idioma de inglés y español actualmente soy estudiante de ingeniería en ciencias de la computación en la Universidad Don Bosco. "+
+                        "Aunque en el ámbito laboral no me he desarrollado de lleno en la carrera por el momento soy analista en tiempo real verificando números y analizando  a través de PBI  en beneficio a la empresa. "+
+                        "Me gusta más enfocarme en las bases de datos por el momento me he desarrollado en el ámbito académico desarrollando diferentes aplicaciones, "+
+                        "sitios web que son enfocados a diferentes empresas y ámbitos.</p>"+
+                        "<div class='row card-text'>"+
+                        "<div class='col-md-6'>"+
+                        "<ul class='card-text'>"+
+                        "<li><b>JOGIWISUBY: Website para una floristería</b><br> Desarrollado utilizando HTML, CSS Y JS</li><br>"+
+                        "<li><b>Progress-mind: Aplicación de aprendizaje</b><br> Desarrollado utilizando  React Native, Node JS y Firebase</li><br>"+
+                        "</ul>"+
+                        "</div>"+
+                        "<div class='col-md-6'>"+
+                        "<ul class='card-text'>"+
+                        "<li><b>mioPharma (Ecommerce)</b><br> Desarrollado utilizando  C#, Bootstrap y ASP.net Core MVC 5</li><br>"+
+                        "<li><b>Sumersa (Ecommerce)</b><br> Desarrollado utilizando PHP, Bootstrap y MySQL</li><br>"+
+                        "</ul>"+
+                        "</div>"+
+                        "</div>"+
+                        "</div>"+
+                        "<div class='col-md-3'>"+
+                        "<img src='https://smartidea-api.000webhostapp.com/images/william-dev.jpg' alt='developer-william' class='img-fluid start-float divImagen py-4 my-4'>"+
+                        "</div>"+
+                        "<div class='py-2'>"+
+                        "<p class='card-text'><b class='card-title'>Cargo en el equipo:</b> Diseñador de interfaz gráfica</p>"+
+                        "<p class='card-text'><b class='card-title'>Cuenta de Github: </b><a href='https://github.com/portan17' class='githubAccount' target='_blank'>Portan17</a></p>"
+                        +"</div>"+
+                        "</div>";
                     break;
                 case "content4":
                     cardBody.innerHTML =
-                        "<h5 class='card-title'>Content 4 Title</h5><p class='card-text'>This is the second content.</p>";
+                        "<div class='row px-5'>"+  
+                        "<h2 class='card-title'>Gissela Serrano</h2>"+             
+                        "<div class='col-md-9 card-text'>"+                   
+                        "<p class=' card-text py-4'>Gissela Verenice Serrano Lopez nacio en San Salvador, El Salvador el 25 de agosto de 2001. Realizo sus estudios de educacion media  en el Centro Cultural Salvadoreño Americano,"+
+                        "obteniendo el titulo de Bachillerato General. Obtuvo reconocimientos por exelente redimiento academico y por mejor participacion en feria de ciencias en 2017. "+
+                        "Realizo estudios del idioma ingles hasta nivel avanzado y matenimineto de computadoras en el Centro Cultural Salvadoreño Americano, ademas posee certificaciones en Microsof Office 2016. "+
+                        "En la actualidad cursa la carrera de Ingenieria en Ciencias de la Computacion en la Universidad Don Bosco.</p>"+
+                        "<p class='card-text titlePortafolio'><b>Portafolio de proyectos:</b></p>"+
+                        "<div class='row card-text'>"+
+                        "<div class='col-md-6'>"+
+                        "<ul class='card-text'>"+
+                        "<li><b>Diversión al aprender</b><br> Desarrollado utilizando  Windows Forms, C# y SQL Server</li><br>"+
+                        "<li><b>Sistema de facturación amigos (SFA)</b><br> Desarrollado utilizando  Windows Forms, C# y SQL Server</li><br>"+
+                        "<li><b>Sistema de control de empleados (SCE)</b><br> Desarrollado utilizando  Windows Forms, C# y SQL Server</li><br>"+
+                        "<li><b>JOGIWISUBY: Website para una floristería</b><br> Desarrollado utilizando HTML, CSS Y JS</li><br>"+
+                        "</ul>"+
+                        "</div>"+
+                        "<div class='col-md-6'>"+
+                        "<ul class='card-text'>"+
+                        "<li><b>Analizador Léxico y Sintáctico</b><br> Desarrollado utilizando  Forms, Jflex, y Java</li><br>"+
+                        "<li><b>mioPharma (Ecommerce)</b><br> Desarrollado utilizando  C#, Bootstrap y ASP.net Core MVC 5</li><br>"+
+                        "<li><b>Sumersa (Ecommerce)</b><br> Desarrollado utilizando PHP, Bootstrap y MySQL</li><br>"+
+                        "<li><b>Progress-mind: Aplicación de aprendizaje</b><br> Desarrollado utilizando  React Native, Node JS y Firebase</li><br>"+
+                        "</ul>"+
+                        "</div>"+
+                        "</div>"+
+                        "</div>"+
+                        "<div class='col-md-3'>"+
+                        "<img src='https://smartidea-api.000webhostapp.com/images/gissela-dev.jpg' alt='developer-gissela' class='img-fluid start-float divImagen py-4 my-4'>"+
+                        "</div>"+
+                        "<div class='py-4'>"+
+                        "<p class='card-text'><b class='card-title'>Cargo en el equipo:</b> Project Manager y Desarrolladora</p>"+
+                        "<p class='card-text'><b class='card-title'>Cuenta de Github: </b><a href='https://github.com/Gissela25' class='githubAccount' target='_blank'>Gissela25</a></p>"
+                        +"</div>"+
+                        "</div>";
                     break;
                 case "content5":
                     cardBody.innerHTML =
-                        "<h5 class='card-title'>Content 5 Title</h5><p class='card-text'>This is the second content.</p>";
+                        "<div class='row px-5'>"+  
+                        "<h2 class='card-title'>Susan Zelaya</h2>"+             
+                        "<div class='col-md-9 card-text'>"+                   
+                        "<p class=' card-text py-4'>Gissela Verenice Serrano Lopez nacio en San Salvador, El Salvador el 25 de agosto de 2001. Realizo sus estudios de educacion media  en el Centro Cultural Salvadoreño Americano,"+
+                        "obteniendo el titulo de Bachillerato General. Obtuvo reconocimientos por exelente redimiento academico y por mejor participacion en feria de ciencias en 2017. "+
+                        "Realizo estudios del idioma ingles hasta nivel avanzado y matenimineto de computadoras en el Centro Cultural Salvadoreño Americano, ademas posee certificaciones en Microsof Office 2016. "+
+                        "En la actualidad cursa la carrera de Ingenieria en Ciencias de la Computacion en la Universidad Don Bosco.</p>"+
+                        "<p class='card-text titlePortafolio'><b>Portafolio de proyectos:</b></p>"+
+                        "<div class='row card-text'>"+
+                        "<div class='col-md-6'>"+
+                        "<ul class='card-text'>"+
+                        "<li><b>Sistema de inventariado</b><br> Desarrollado utilizando  Windows Forms, C# y SQL Server</li><br>"+
+                        "<li><b>Sistema de facturación amigos (SFA)</b><br> Desarrollado utilizando  Windows Forms, C# y SQL Server</li><br>"+
+                        "<li><b>TRUCKDASH</b><br> Desarrollado utilizando  Windows Forms, C# y SQL Server</li><br>"+
+                        "<li><b>JOGIWISUBY: Website para una floristería</b><br> Desarrollado utilizando HTML, CSS Y JS</li><br>"+
+                        "</ul>"+
+                        "</div>"+
+                        "<div class='col-md-6'>"+
+                        "<ul class='card-text'>"+
+                        "<li><b>mioPharma (Ecommerce)</b><br> Desarrollado utilizando  C#, Bootstrap y ASP.net Core MVC 5</li><br>"+
+                        "<li><b>Sumersa (Ecommerce)</b><br> Desarrollado utilizando PHP, Bootstrap y MySQL</li><br>"+
+                        "<li><b>Progress-mind: Aplicación de aprendizaje</b><br> Desarrollado utilizando  React Native, Node JS y Firebase</li><br>"+
+                        "</ul>"+
+                        "</div>"+
+                        "</div>"+
+                        "</div>"+
+                        "<div class='col-md-3'>"+
+                        "<img src='https://smartidea-api.000webhostapp.com/images/susan-dev.jpg' alt='developer-susan' class='img-fluid start-float divImagen py-4 my-4'>"+
+                        "</div>"+
+                        "<div class='py-4'>"+
+                        "<p class='card-text'><b class='card-title'>Cargo en el equipo:</b> Diseñadora de interfaz gráfica y  Administradora de base de datos</p>"+
+                        "<p class='card-text'><b class='card-title'>Cuenta de Github: </b><a href='https://github.com/susan749' class='githubAccount' target='_blank'>Susan749</a></p>"+
+                        "</div>"+
+                        "</div>";
                     break;
                 default:
                     break;

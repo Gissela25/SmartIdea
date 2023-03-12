@@ -72,3 +72,7 @@ ul{
 ul b{
     color: #FED600;
 }
+.githubAccount:link, .githubAccount:visited, .githubAccount:active {
+    text-decoration:none;
+    color: #F4F4F2;
+}
