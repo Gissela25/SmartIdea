@@ -17,6 +17,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .accordion-body {background-color: #3d4246;}      
+        .accordion-button{background-color: #3d4246; color:white}
+        .accordion-button:not(.collapsed) {background-color: #FED600; color:black}  
+        .accordion-item {background-color: black;}
+    </style>
 </head>
 
 <body>
@@ -62,22 +69,29 @@
                 </h2>
                 <div id="collap1" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionProyecto">
                     <div class="accordion-body">
-                        <div class="card-body mx-3 my-3">
-                            <div class="">
-                                <i class="fa-solid fa-taxi fa-2xl"></i>
-                            </div>  
-                            <h6 class="card-title my-3" style="color: FED600;">Ooober</h6>                        
-                            <p class="card-text my-3" style="text-align: center;">Ooober es una aplicación movil que te permite solicitar servicios de transporte privado, envinado tu solicitud al conductor mas cercano permitiendote tener una pronta respuesta de manera sencilla y economica.<p>
-                            <h6 style="color: #FED600;">Caracteristicas</h6>
-                            <ul class="card-text">
-                                <li>Interfaz amigable y facil de utliziar</li>
-                                <li>Detecta automaticamente tu ubicación</li>
-                                <li>Muestra en tiempo real la posicion y distancia de tu conductor, y a lo largo del viaje</li>                            
-                                <li>Calcula automaticamente el costo de tu viaje en base a la distancia</li>
-                                <li>Te permite calificar el servicio brindado por tu condcutor</li>
-                                <li>Manten un historial de tus viajes realizados</li>
-                            </ul>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card bg-dark">
+                                    <div class="card-body mx-3 my-3">
+                                        <div class="circle">
+                                            <i class="fa-solid fa-taxi fa-2xl"></i>
+                                        </div>  
+                                        <h6 class="card-title my-3" style="color: FED600;">Ooober</h6>                        
+                                        <p class="card-text my-3" style="text-align: center;">Ooober es una aplicación movil que te permite solicitar servicios de transporte privado, envinado tu solicitud al conductor mas cercano permitiendote tener una pronta respuesta de manera sencilla y economica.<p>
+                                        <h6 style="color: #FED600;">Caracteristicas</h6>
+                                        <ul class="card-text">
+                                            <li>Interfaz amigable y facil de utliziar</li>
+                                            <li>Detecta automaticamente tu ubicación</li>
+                                            <li>Muestra en tiempo real la posicion y distancia de tu conductor, y a lo largo del viaje</li>                            
+                                            <li>Calcula automaticamente el costo de tu viaje en base a la distancia</li>
+                                            <li>Te permite calificar el servicio brindado por tu condcutor</li>
+                                            <li>Manten un historial de tus viajes realizados</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
                 </div>
@@ -89,13 +103,13 @@
                     </button>
                 </h2>
                 <div id="collap2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionProyecto">
-                    <div class="accordion-body">
+                    <div class= "accordion-body">
                         <div class="row row-cols-1 row-cols-md-2">
                         
                             <div class="col">
                                 <div class="card bg-dark card-height">
                                     <div class="card-body">
-                                        <div class="">
+                                        <div class="circle">
                                             <i class="fa-solid fa-user fa-2xl" ></i>
                                         </div>  
                                         <h6 class="card-title my-3" style="color: #FED600;">Usuarios</h6>                                    
@@ -107,7 +121,7 @@
                             <div class="col">
                                 <div class="card bg-dark card-height">
                                     <div class="card-body">
-                                        <div class="">                                        
+                                        <div class="circle">                                  
                                             <i class="fa-solid fa-car fa-2xl"></i>
                                         </div>
                                         <h6 class="card-title my-3" style="color: #FED600;">Conductores</h6>                                    
@@ -132,12 +146,12 @@
                     <div class="accordion-body">
                         <div class="row">                       
                             <div class="col">                            
-                                <div class="card bg-dark text-center">
-                                    <div class="card-header">
-                                        <i class="fa-solid fa-magnifying-glass-dollar fa-2xl"></i>
-                                        <h6 class="card-title my-3" style="color: #FED600;">Costo</h6>  
-                                    </div>
+                                <div class="card bg-dark">                                    
                                     <div class="card-body">
+                                        <div class="circle">
+                                            <i class="fa-solid fa-magnifying-glass-dollar fa-2xl"></i>
+                                        </div>                                        
+                                        <h6 class="card-title my-3" style="color: #FED600;">Costo</h6> 
                                         <p style="text-align: center;" class="my-3 card-text">Como cliente Ooober el costo del servicio es completamente gratiuto, no tienes que preocuparte por subscripciones o compras iniciales, solo pagas el servicio que tu conductor te brinde el cual depende de la distancia del viaje y la duracion de este. </p>                                     
                                     </div>
                                 </div>
