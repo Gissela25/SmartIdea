@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
+
 <body>
     <nav class="navbar navbar-expand-lg" style="background-color: #2C3333;">
         <div class="container-fluid">
@@ -31,9 +32,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link nav-link-white" href="index.html">Nosotros</a>
+                    <a class="nav-link nav-link-white" href="index.html">Home</a>
+                    <a class="nav-link nav-link-white" href="nosotros.html">Nosotros</a>
                     <a class="nav-link nav-link-white" href="servicios.html">Servicios</a>
-                    <a class="nav-link nav-link-white" href="proyecto.html">Ooober</a>
                     <a class="nav-link nav-link-yellow" href="colaboradores.html">Desarrolladores</a>
                     <a class="nav-link nav-link-white" href="contactanos.html">Contactanos</a>
                 </div>
@@ -45,23 +46,11 @@
             <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
                     <a class="nav-link nav-link-black" aria-current="true" href="#"
-                        onclick="changeContent('content1'); setActiveNav(this)">Aurus</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-black" aria-current="true" href="#"
-                        onclick="changeContent('content2'); setActiveNav(this)">Jony</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-black" aria-current="true" href="#"
-                        onclick="changeContent('content3'); setActiveNav(this)">William</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-link-black" aria-current="true" href="#"
                         onclick="changeContent('content4'); setActiveNav(this)">Gissela</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-link-black" aria-current="true" href="#"
-                        onclick="changeContent('content5'); setActiveNav(this)">Susan</a>
+                        onclick="changeContent('content5'); setActiveNav(this)">Jeanluca</a>
                 </li>
             </ul>
         </div>
@@ -89,119 +78,12 @@
         function changeContent(content) {
             var cardBody = document.getElementById("card-body");
             switch (content) {
-                case "content1":
-                    cardBody.innerHTML =
-                        "<div class='row px-5'>" +
-                        "<h2 class='card-title'>Aurus Alfaro</h2>" +
-                        "<div class='col-md-9 card-text'>" +
-                        "<p class=' card-text py-4'>Soy Aurus Alfaro de 32 años de edad originario de la ciudad de San Vicente, actualmente estudiante de ingeniería en ciencias de la computación en Universidad Don Bosco, " +
-                        "mi experiencia profesional consiste principalmente en el desarrollo de aplicaciones financieras en ASP.net C# en intranet y tecnologías lado cliente.</p>" +
-                        "<p class=' card-text py-1'>Me interesa todos los aspectos de la tecnología de la información, principalmente el desarrollo full stack, tengo experiencia administrando en servicios cloud como " +
-                        "Azure en áreas de VPS, bases de datos, DNS y certificados SSL así como blob storages, entre otros.</p>" +
-                        "<p class='card-text titlePortafolio'><b>Portafolio de proyectos:</b></p>" +
-                        "<div class='row card-text'>" +
-                        "<div class='col-md-6'>" +
-                        "<ul class='card-text'>" +
-                        "<li><b>Sistema para administración de pasantías</b><br> Desarrollado utilizando  ASP.net MVC 5</li><br>" +
-                        "<li><b>Sistema para reserva de habitaciones en hotel</b><br> Desarrollado utilizando  Java y JSP</li><br>" +
-                        "</ul>" +
-                        "</div>" +
-                        "<div class='col-md-6'>" +
-                        "<ul class='card-text'>" +
-                        "<li><b>Aplicación web para videojuego (mmorpg ffxiv)</b><br> Desarrollado utilizando  ASP.net MVC 5</li><br>" +
-                        "<li><b>Sistema manejo de cartera de clientes para cooperativas</b><br> Desarrollado utilizando  ASP.Net MVC 5, Jquery y Bootstrap</li><br>" +
-                        "</ul>" +
-                        "</div>" +
-                        "</div>" +
-                        "</div>" +
-                        "<div class='col-md-3'>" +
-                        "<img src='https://smartidea-api.000webhostapp.com/images/aurus-dev.jpg' alt='developer-aurus' class='img-fluid start-float divImagen py-4 my-4'>" +
-                        "</div>" +
-                        "<div class='py-2'>" +
-                        "<p class='card-text'><b class='card-title'>Cargo en el equipo:</b> Tester </p>" +
-                        "<p class='card-text'><b class='card-title'>Cuenta de Github: </b><a href='https://github.com/horusxci' class='githubAccount' target='_blank'>Horusxci</a></p>"
-                        + "</div>" +
-                        "</div>";
-                    break;
-                case "content2":
-                    cardBody.innerHTML =
-                        "<div class='row px-5'>" +
-                        "<h2 class='card-title'>Jony Morales</h2>" +
-                        "<div class='col-md-9 card-text'>" +
-                        "<p class=' card-text py-4'>Mi nombre es Jony Morales López de 21 años, un estudiante de Ingeniería en Ciencias de la Computación apasionado por la tecnología, y especialmente por el desarrollo web." +
-                        "Actualmente me encuentro cursando mi ultimo año de carrera en la Universidad Don Bosco y aprendiendo inglés. Mi pasión por la informática empezó desde bachillerato, y desde ese tiempo hasta el día de hoy he aprendido" +
-                        "a utilizar herramientas, frameworks y lenguajes de programación como C#, PHP, JavaScript, entre otros.</p>" +
-                        "<p class=' card-text py-1'>Durante todo mi desarrollo profesional, he trabajado en muchos proyectos académicos utilizando diferentes tecnologías que han sido constructivas para mí. Hoy por hoy, " +
-                        "estoy entusiasmado por comenzar mi carrera profesional en el campo de la ingeniería en ciencias computación y desarrollar nuevas habilidades.</p>" +
-                        "<p class='card-text titlePortafolio'><b>Portafolio de proyectos:</b></p>" +
-                        "<div class='row card-text'>" +
-                        "<div class='col-md-6'>" +
-                        "<ul class='card-text'>" +
-                        "<li><b>Sistema de Control de Inscripciones de Aeróbicos</b><br> Desarrollado utilizando  Windows Forms, C# y SQL Server</li><br>" +
-                        "<li><b>Calculadora Física: Cinemática y Dinámica de Partículas</b><br> Desarrollado utilizando  Windows Forms,Vectores y C#</li><br>" +
-                        "<li><b>Gestor de asistencias con Escáner</b><br> Desarrollado utilizando  Windows Forms, C# y SQL Server</li><br>" +
-                        "<li><b>HelpDesk</b><br> Desarrollado utilizando JavaScript, HTML y CSS</li><br>" +
-                        "</ul>" +
-                        "</div>" +
-                        "<div class='col-md-6'>" +
-                        "<ul class='card-text'>" +
-                        "<li><b>Analizador Léxico y Sintáctico</b><br> Desarrollado utilizando  Forms, Jflex, y Java</li><br>" +
-                        "<li><b>mioPharma (Ecommerce)</b><br> Desarrollado utilizando  C#, Bootstrap y ASP.net Core MVC 5</li><br>" +
-                        "<li><b>Sumersa (Ecommerce)</b><br> Desarrollado utilizando PHP, Bootstrap y MySQL</li><br>" +
-                        "<li><b>Progress-mind: Aplicación de aprendizaje</b><br> Desarrollado utilizando  React Native, Node JS y Firebase</li><br>" +
-                        "</ul>" +
-                        "</div>" +
-                        "</div>" +
-                        "</div>" +
-                        "<div class='col-md-3'>" +
-                        "<img src='https://smartidea-api.000webhostapp.com/images/jony-dev.jpg' alt='developer-jony' class='img-fluid start-float divImagen py-4 my-4'>" +
-                        "</div>" +
-                        "<div class='py-4'>" +
-                        "<p class='card-text'><b class='card-title'>Cargo en el equipo:</b> Desarrollador</p>" +
-                        "<p class='card-text'><b class='card-title'>Cuenta de Github: </b><a href='https://github.com/Jony-07' class='githubAccount' target='_blank'>Jony-07</a></p>"
-                        + "</div>" +
-                        "</div>";
-                    break;
-                case "content3":
-                    cardBody.innerHTML =
-                        "<div class='row px-5'>" +
-                        "<h2 class='card-title'>William Portan</h2>" +
-                        "<div class='col-md-9 card-text'>" +
-                        "<p class=' card-text py-4'>Mi nombre es William Fernando  Portan tengo 25 años, soy el mayor de dos hermanos, nacido en San Salvador, del municipio de Ilopango, " +
-                        "soy bilingüe en el idioma de inglés y español actualmente soy estudiante de ingeniería en ciencias de la computación en la Universidad Don Bosco. " +
-                        "Aunque en el ámbito laboral no me he desarrollado de lleno en la carrera por el momento soy analista en tiempo real verificando números y analizando  a través de PBI  en beneficio a la empresa. " +
-                        "Me gusta más enfocarme en las bases de datos por el momento me he desarrollado en el ámbito académico desarrollando diferentes aplicaciones, " +
-                        "sitios web que son enfocados a diferentes empresas y ámbitos.</p>" +
-                        "<div class='row card-text'>" +
-                        "<div class='col-md-6'>" +
-                        "<ul class='card-text'>" +
-                        "<li><b>JOGIWISUBY: Website para una floristería</b><br> Desarrollado utilizando HTML, CSS Y JS</li><br>" +
-                        "<li><b>Progress-mind: Aplicación de aprendizaje</b><br> Desarrollado utilizando  React Native, Node JS y Firebase</li><br>" +
-                        "</ul>" +
-                        "</div>" +
-                        "<div class='col-md-6'>" +
-                        "<ul class='card-text'>" +
-                        "<li><b>mioPharma (Ecommerce)</b><br> Desarrollado utilizando  C#, Bootstrap y ASP.net Core MVC 5</li><br>" +
-                        "<li><b>Sumersa (Ecommerce)</b><br> Desarrollado utilizando PHP, Bootstrap y MySQL</li><br>" +
-                        "</ul>" +
-                        "</div>" +
-                        "</div>" +
-                        "</div>" +
-                        "<div class='col-md-3'>" +
-                        "<img src='https://smartidea-api.000webhostapp.com/images/william-dev.jpg' alt='developer-william' class='img-fluid start-float divImagen py-4 my-4'>" +
-                        "</div>" +
-                        "<div class='py-2'>" +
-                        "<p class='card-text'><b class='card-title'>Cargo en el equipo:</b> Diseñador de interfaz gráfica</p>" +
-                        "<p class='card-text'><b class='card-title'>Cuenta de Github: </b><a href='https://github.com/portan17' class='githubAccount' target='_blank'>Portan17</a></p>"
-                        + "</div>" +
-                        "</div>";
-                    break;
                 case "content4":
                     cardBody.innerHTML =
                         "<div class='row px-5'>" +
                         "<h2 class='card-title'>Gissela Serrano</h2>" +
                         "<div class='col-md-9 card-text'>" +
-                        "<p class=' card-text py-3'>Mi nombre es Gissela Verenice Serrano Lopez, nací en San Salvador, El Salvador el 25 de agosto de 2001 y actualmente tengo 21 años. Soy una persona bilingüe que habla inglés y español con fluidez. Desde muy pequeña siempre estuve interesada en el mundo de la tecnología y la informática, por lo que decidí estudiar Ingeniería en Ciencias de la Computación. Actualmente me encuentro en el último año de mi carrera universitaria y estoy emocionada por lo que el futuro me depara.</p>" +
+                        "<p class=' card-text py-3'>Mi nombre es Gissela Verenice Serrano Lopez, agresada de Ingenieria en Ciencias de la Computación en la Univerisdad Don Bosco, desarrolladora web frontend y backend, deasarrolladora de aplicaciones moviles</p>" +
                         "<p class=' card-text py-1'>Durante mi desarrollo académico y profesional he adquirido habilidades y conocimientos en diversas herramientas de programación como HTML, CSS, JavaScript, Bootstrap, React JS, React Native, PHP, SQL, entre otras. Estas habilidades me han permitido desarrollar proyectos innovadores y eficientes.</p>" +
                         "<p class='card-text titlePortafolio'><b>Portafolio de proyectos:</b></p>" +
                         "<div class='row card-text'>" +
@@ -235,13 +117,10 @@
                 case "content5":
                     cardBody.innerHTML =
                         "<div class='row px-5'>" +
-                        "<h2 class='card-title'>Susan Zelaya</h2>" +
+                        "<h2 class='card-title'>Jeanluca Flores</h2>" +
                         "<div class='col-md-9 card-text'>" +
-                        "<p class=' card-text py-4'>Susan Abigail Zelaya Flores nacida el 7 de septiembre del año 2000 en la ciudad de san salvador, El Salvador, realizando sus estudios de educación media opción administrativo " +
-                        "contable en el complejo educativo católico “La Santa Familia”, actualmente estudiando la carrera de ingeniería en ciencias de la computación en la universidad Don Bosco. " +
-                        "Además, ha realizado estudios en el programa ASEx (Academias Sabatinas Experimentales) de la Universidad Dr. José Matías Delgado, opción Gestión Empresarial, " +
-                        "también ha realizado diplomados en ofimática, Photoshop y mantenimiento de computadoras en el Centro de enseñanzas y Consultorías en Computación ECOA.</p>" +
-                        "<p class='card-text titlePortafolio'><b>Portafolio de proyectos:</b></p>" +
+                        "<p class=' card-text py-4'>Mi nombre es Jeanluca Chaves Flores, me encuentro en la recta final de mi carrera de Ingenieria en Ciencias de la Computación en la Universidad Don Bosco, desarrollador web Frontend y analista de datos, con multiples conocimientos en el area de base de datos " +
+                            "<p class=' card-text py-1'>Durante mi desarrollo académico y profesional he adquirido habilidades y conocimientos en diversas herramientas de programación como HTML, CSS, JavaScript, Bootstrap, React JS, React Native, PHP, SQL, entre otras. Estas habilidades me han permitido desarrollar proyectos innovadores y eficientes.</p>" +
                         "<div class='row card-text'>" +
                         "<div class='col-md-6'>" +
                         "<ul class='card-text'>" +
@@ -261,17 +140,18 @@
                         "</div>" +
                         "</div>" +
                         "<div class='col-md-3'>" +
-                        "<img src='https://smartidea-api.000webhostapp.com/images/susan-dev.jpg' alt='developer-susan' class='img-fluid start-float divImagen py-4 my-4'>" +
+                        "<img src='assets/img/lucas.jpeg' alt='developer-lucas' class='img-fluid start-float divImagen py-4 my-4'>" +
                         "</div>" +
                         "<div class='py-4'>" +
-                        "<p class='card-text'><b class='card-title'>Cargo en el equipo:</b> Diseñadora de interfaz gráfica y  Administradora de base de datos</p>" +
-                        "<p class='card-text'><b class='card-title'>Cuenta de Github: </b><a href='https://github.com/susan749' class='githubAccount' target='_blank'>Susan749</a></p>" +
+                        "<p class='card-text'><b class='card-title'>Cargo en el equipo:</b> Diseñador de interfaz gráfica y  Administrador de base de datos</p>" +
+                        "<p class='card-text'><b class='card-title'>Cuenta de Github: </b><a href='https://github.com/lucasuser22' class='githubAccount' target='_blank'>lucasuser22</a></p>" +
                         "</div>" +
                         "</div>";
                     break;
                 default:
                     break;
             }
+            
         }
     </script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
